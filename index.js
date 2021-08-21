@@ -91,7 +91,7 @@ function promoCodeApply() {
         let totalPrice = parseFloat(document.getElementById('totalPrice').innerText);
         
         totalPrice = totalPrice - (totalPrice * 0.20);
-        document.getElementById('promoCode').innerText = "Promo Code Applied & You Get 20% Off";
+        document.getElementById('promoCode').innerText = "Promo Code Applied & You Got 20% Off.";
         document.getElementById('overall-price').innerText = Math.round(totalPrice);
     };
     document.getElementById('promo').value = '';
