@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMac CheckOut Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="pdImage">
+            <img src="./assets/images/imac_blue.jpg" alt="iMac" />
+        </div>
+        <div class="pdDescription">
+            <div class="pdname">
+                <h1>Customize your Blue 24-inch iMac with M1 chip.</h1>
+                <p>
+                    Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                    16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic
+                    Mouse, Magic Keyboard US English.
+                </p>
+            </div>
+            <div class="pdconfig">
+                <div class="memory">
+                    <h3>Memory</h3>
+                    <button id="mbasePrice" class="active">8GB Unified Memory</button>
+                    <button id="mExtraPrice" rel="noopener noreferrer">16GB Unified Memory</button>
+                </div>
+                <div class="storage">
+                    <h3>Storage</h3>
+                    <button id="sBasePrice" class="active">256GB Unified Storage</button>
+                    <button id="sExtraPriceOne" rel="noopener noreferrer">512GB Unified Storage</button>
+                    <button id="sExtraPriceTwo" rel="noopener noreferrer">1TB Unified Storage</button>
+                </div>
+                <div class="del">
+                    <h3>Chose Your Delivery Option</h3>
+                    <button id="freeDelivery" class="active">Friday, Aug 25 - Free Prime Delivery</button>
+                    <button id="deliveryApply">Friday, Aug 21 - Delivery Charge $20</button>
+                </div>
+            </div>
+            <div class="prices">
+                <div class="flex">
+                    <h5>Best Price</h5>
+                    <div></div>
+                    <h5>$<span id="basePrice">1299</span></h5>
+                </div>
+                <div class="flex">
+                    <h5>Extra Memory Cost</h5>
+                    <div></div>
+                    <h5>$<span id="totalMemoryCost">0</span></h5>
+                </div>
+                <div class="flex">
+                    <h5>Extra Storage Cost</h5>
+                    <div></div>
+                    <h5>$<span id="totalStorageCost">0</span></h5>
+                </div>
+                <div class="flex">
+                    <h5>Delivery Charge</h5>
+                    <div></div>
+                    <h5>$<span id="totalDeliveryCharge">0</span></h5>
+                </div>
+                <div class="flex">
+                    <h5>Total Price</h5>
+                    <div></div>
+                    <h5>$<span id="totalPrice">1299</span></h5>
+                </div>
+            </div>
+            <div class="promo">
+                <label for="promo">Add Promo Code</label>
+                <br>
+                <input id="promo" type="text" placeholder="Promo Code Here" />
+                <button type="submit" onclick="promoCodeApply()">Apply Promo</button>
+                <p id="promoCode"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>Total: $<span id="overall-price">1299</span></h2>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./index.js"></script>
+</body>
+</html>

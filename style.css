@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+button {
+    font-family: 'Varela Round', sans-serif;
+    background: #fff;
+    border: 1px solid #739fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 8px;
+    outline: none;
+    margin: 3px 0;
+}
+.active {
+    background: #739fff;
+    color: #fff;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pdImage {
+    width: 100%;
+}
+.pdImage img {
+    width: 80%;
+    height: auto;
+}
+
+.pdDescription {
+    width: 100%;
+    margin: 25px 0;
+}
+.pdname h1 {
+    font-size: 27px;
+}
+.pdname p {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.pdconfig {
+    margin: 5px 0;
+}
+.memory h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.storage h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.del h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.prices {
+    margin: 20px 2px;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+}
+.flex {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.flex:last-child{
+    border-bottom: 0px solid #e8e8e8;
+}
+.flex > div {
+    position: absolute;
+    top: 50%;
+    height: 80%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    border-left: 1px solid #e8e8e8;
+}
+
+
+.promo {
+    margin: 10px 0;
+}
+.promo label {
+    font-size: 14px;
+}
+.promo > input {
+    border: 1px solid #cacaca;
+    padding: 6px 7px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Varela Round', sans-serif;
+    margin: 5px 0;
+}
+
+.promo > button {
+    background: #739fff!important;
+    color: white;
+}
+
+#promoCode {
+    font-size: 13px;
+    color: red;
+}
+
+footer {
+    text-align: center;
+    background-color: #739fff;
+    line-height: 40px;
+    color: #fff;
+}
+footer > h2 {
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 670px){
+    main {
+        width: 90%;
+        flex-direction: column;
+    }
+    .pdImage {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
